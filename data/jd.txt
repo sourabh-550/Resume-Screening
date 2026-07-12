@@ -1,0 +1,24 @@
+Job Title: AI/ML Engineer Intern
+
+About the Role:
+We are looking for an AI/ML Engineer Intern to help build and deploy 
+machine learning models and AI-powered applications. You will work on 
+data preprocessing, model development, and integrating ML solutions 
+into production systems.
+
+Required Skills:
+- Strong proficiency in Python
+- Experience with Machine Learning libraries (scikit-learn, TensorFlow, or PyTorch)
+- Understanding of NLP concepts (embeddings, transformers, or similar)
+- Familiarity with REST APIs (FastAPI or Flask)
+- Experience with version control (Git/GitHub)
+- Basic understanding of SQL and databases
+
+Nice to Have:
+- Experience with LLMs or Generative AI (LangChain, RAG systems)
+- Exposure to cloud platforms (AWS, GCP, Azure) or HuggingFace
+- Experience deploying ML models (Docker, Streamlit)
+- Data visualization skills (Power BI, Matplotlib)
+
+Experience: 0-1 years (internship/entry-level)
+Education: B.Tech/B.E in Computer Science or related field
