@@ -12,12 +12,12 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.x-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
 [![Groq](https://img.shields.io/badge/Groq-LLaMA%203.3-F54029?style=for-the-badge&logo=meta&logoColor=white)](https://groq.com)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge)](https://github.com/YOUR_USERNAME/smart-resume-screener/releases)
-[![Stars](https://img.shields.io/github/stars/YOUR_USERNAME/smart-resume-screener?style=for-the-badge&logo=github&color=gold)](https://github.com/YOUR_USERNAME/smart-resume-screener/stargazers)
-[![Forks](https://img.shields.io/github/forks/YOUR_USERNAME/smart-resume-screener?style=for-the-badge&logo=github&color=blue)](https://github.com/YOUR_USERNAME/smart-resume-screener/network/members)
-[![Issues](https://img.shields.io/github/issues/YOUR_USERNAME/smart-resume-screener?style=for-the-badge&logo=github&color=red)](https://github.com/YOUR_USERNAME/smart-resume-screener/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/YOUR_USERNAME/smart-resume-screener?style=for-the-badge&logo=github)](https://github.com/YOUR_USERNAME/smart-resume-screener/commits/main)
-[![Contributors](https://img.shields.io/github/contributors/YOUR_USERNAME/smart-resume-screener?style=for-the-badge&logo=github&color=green)](https://github.com/YOUR_USERNAME/smart-resume-screener/graphs/contributors)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blueviolet?style=for-the-badge)](https://github.com/sourabh-550/smart-resume-screener/releases)
+[![Stars](https://img.shields.io/github/stars/sourabh-550/smart-resume-screener?style=for-the-badge&logo=github&color=gold)](https://github.com/sourabh-550/smart-resume-screener/stargazers)
+[![Forks](https://img.shields.io/github/forks/sourabh-550/smart-resume-screener?style=for-the-badge&logo=github&color=blue)](https://github.com/sourabh-550/smart-resume-screener/network/members)
+[![Issues](https://img.shields.io/github/issues/sourabh-550/smart-resume-screener?style=for-the-badge&logo=github&color=red)](https://github.com/sourabh-550/smart-resume-screener/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/sourabh-550/smart-resume-screener?style=for-the-badge&logo=github)](https://github.com/sourabh-550/smart-resume-screener/commits/main)
+[![Contributors](https://img.shields.io/github/contributors/sourabh-550/smart-resume-screener?style=for-the-badge&logo=github&color=green)](https://github.com/sourabh-550/smart-resume-screener/graphs/contributors)
 
 </div>
 
@@ -38,7 +38,6 @@
 - [📡 API Documentation](#-api-documentation)
 - [🤖 Machine Learning Pipeline](#-machine-learning-pipeline)
 - [🔄 Workflow](#-workflow)
-- [📊 Performance](#-performance)
 - [🛡️ Security](#️-security)
 - [☁️ Deployment](#️-deployment)
 - [🛣️ Roadmap](#️-roadmap)
@@ -61,7 +60,7 @@
 
 This application solves that problem by combining:
 
-- 🧠 **LLM-based structured extraction** (Groq × LLaMA 3.3-70B) to parse both job descriptions and resumes into clean JSON data
+- 🧠 **LLM-based structured extraction** (Groq × LLaMA 3.3-70B, orchestrated via LangChain) to parse both job descriptions and resumes into clean JSON data
 - 📐 **Semantic similarity scoring** (Sentence Transformers — `all-MiniLM-L6-v2`) to measure contextual alignment between a candidate and a role
 - 🎯 **Weighted ranking** that blends skill overlap (50%), semantic similarity (40%), and experience match (10%) into a single interpretable score
 - 💬 **AI-generated natural language explanations** justifying each candidate's ranking
@@ -104,6 +103,8 @@ This application solves that problem by combining:
 
 </div>
 
+> 📌 *Add your own screenshots to `assets/` — the images above are placeholders until real screenshots are dropped in.*
+
 ---
 
 ## 🎬 Demo
@@ -112,22 +113,19 @@ This application solves that problem by combining:
 
 ### 🌐 Live Demo
 
-> **[🚀 Launch App — Click Here](https://your-app-url.streamlit.app)**
-> *(Deployment link — replace with your Streamlit Cloud / Render URL)*
+> **[🚀 Launch App — Click Here](https://resume-screening-za5ct8g8ukapivatavshtc.streamlit.app)**
 
 ---
 
 ### 🎥 Video Walkthrough
 
-[![Demo Video](assets/demo_thumbnail.png)](https://youtu.be/YOUR_VIDEO_ID)
-
-*Click the thumbnail to watch the full product demo on YouTube.*
+> *Add a demo video link here once recorded.*
 
 ---
 
 ### 🖥️ Animated Demo
 
-![App Demo GIF](assets/demo.gif)
+> *Add `assets/demo.gif` once recorded.*
 
 </div>
 
@@ -139,6 +137,7 @@ This application solves that problem by combining:
 |---|---|---|
 | **Frontend** | [Streamlit](https://streamlit.io) | Interactive web UI with custom CSS dark theme |
 | **Backend API** | [FastAPI](https://fastapi.tiangolo.com) | RESTful endpoints for JD upload, resume upload, and ranking |
+| **LLM Orchestration** | [LangChain](https://www.langchain.com) | Prompt orchestration for structured extraction and explanations |
 | **LLM Provider** | [Groq](https://groq.com) + LLaMA 3.3-70B | Ultra-fast structured extraction from raw resume/JD text |
 | **ML / Embeddings** | [Sentence Transformers](https://www.sbert.net/) `all-MiniLM-L6-v2` | Semantic similarity between candidate and job description |
 | **Scoring** | [scikit-learn](https://scikit-learn.org), [NumPy](https://numpy.org) | Cosine similarity, skill overlap, experience matching |
@@ -236,7 +235,7 @@ smart-resume-screener/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-resume-screener.git
+git clone https://github.com/sourabh-550/smart-resume-screener.git
 cd smart-resume-screener
 ```
 
@@ -390,7 +389,7 @@ INPUT
         pdfplumber (PDF) · python-docx (DOCX)
                           │
                           ▼
-        LLM Structured Extraction (Groq LLaMA 3.3-70B)
+        LLM Structured Extraction (Groq LLaMA 3.3-70B via LangChain)
         temperature=0.1 for determinism
         Output: name · skills[] · experience_years
                 education · job_titles[] · summary
@@ -517,23 +516,6 @@ graph TD
 
 ---
 
-## 📊 Performance
-
-| Metric | Value | Notes |
-|---|---|---|
-| **Skill Match Accuracy** | ~`XX`% | Measured on internal test set |
-| **Semantic Similarity Precision** | ~`XX`% | vs. human recruiter baseline |
-| **Ranking Correlation (Kendall τ)** | ~`X.XX` | vs. human-ranked ground truth |
-| **LLM Extraction Latency** | ~`1–3s` per doc | Groq inference on LLaMA 3.3-70B |
-| **Embedding Latency** | ~`50ms` per candidate | `all-MiniLM-L6-v2` on CPU |
-| **End-to-End (10 resumes)** | ~`15–30s` | Full pipeline including LLM calls |
-| **Memory Usage** | ~`300MB` | Model loaded in memory (embedder) |
-| **Max Concurrent Sessions** | TBD | Stateless — scales horizontally |
-
-> 📝 *Placeholder values marked `XX` — replace with measured results from your evaluation.*
-
----
-
 ## 🛡️ Security
 
 | Area | Implementation |
@@ -583,6 +565,8 @@ docker run -p 8501:8501 --env-file .env smart-resume-screener
 
 ### 🌐 Streamlit Community Cloud
 
+This app is live at: **https://resume-screening-za5ct8g8ukapivatavshtc.streamlit.app**
+
 1. Push your repository to GitHub
 2. Go to [share.streamlit.io](https://share.streamlit.io)
 3. Connect your GitHub repo and set `app.py` as the main file
@@ -625,13 +609,14 @@ For all cloud deployments, store `GROQ_API_KEY` in the platform's secrets manage
 ## 🛣️ Roadmap
 
 - [x] PDF and DOCX resume parsing
-- [x] LLM-based structured extraction (Groq × LLaMA 3.3-70B)
+- [x] LLM-based structured extraction (Groq × LLaMA 3.3-70B via LangChain)
 - [x] Semantic similarity scoring with Sentence Transformers
 - [x] Weighted composite scoring engine
 - [x] AI-generated candidate explanations
 - [x] Streamlit dark-mode UI with score pills and skill tags
 - [x] CSV export of ranked results
 - [x] FastAPI REST backend
+- [x] Deployed on Streamlit Community Cloud
 - [ ] PostgreSQL persistent storage with session history
 - [ ] User authentication and multi-tenant support
 - [ ] Bulk JD comparison (rank candidates against multiple roles simultaneously)
@@ -737,7 +722,7 @@ This project is licensed under the **MIT License**.
 ```
 MIT License
 
-Copyright (c) 2026 [YOUR NAME]
+Copyright (c) 2026 sourabh-550
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -763,6 +748,7 @@ See the full [LICENSE](LICENSE) file for details.
 | Resource | Contribution |
 |---|---|
 | [Groq](https://groq.com) | Lightning-fast LLaMA 3.3-70B inference API |
+| [LangChain](https://www.langchain.com) | LLM orchestration and prompt management |
 | [Sentence Transformers](https://www.sbert.net/) | `all-MiniLM-L6-v2` — efficient, accurate semantic embeddings |
 | [FastAPI](https://fastapi.tiangolo.com) | Modern, high-performance Python web framework |
 | [Streamlit](https://streamlit.io) | Rapid ML app development framework |
@@ -781,11 +767,8 @@ See the full [LICENSE](LICENSE) file for details.
 
 | | |
 |---|---|
-| **Name** | [Your Name](https://github.com/YOUR_USERNAME) |
-| **GitHub** | [@YOUR_USERNAME](https://github.com/YOUR_USERNAME) |
-| **LinkedIn** | [your-linkedin-profile](https://linkedin.com/in/YOUR_LINKEDIN) |
-| **Portfolio** | [yourportfolio.dev](https://yourportfolio.dev) |
-| **Email** | [your.email@example.com](mailto:your.email@example.com) |
+| **GitHub** | [@sourabh-550](https://github.com/sourabh-550) |
+| **HuggingFace** | [@sourabh5500](https://huggingface.co/sourabh5500) |
 
 </div>
 
@@ -797,8 +780,8 @@ If you find this project useful, please consider:
 
 - ⭐ **Starring this repository** — it helps others discover the project
 - 🍴 **Forking** to build your own version or contribute improvements
-- 🐛 **[Reporting Issues](https://github.com/YOUR_USERNAME/smart-resume-screener/issues)** — bugs, edge cases, and unexpected behaviour
-- 💡 **[Suggesting Features](https://github.com/YOUR_USERNAME/smart-resume-screener/issues/new?template=feature_request.md)** — ideas that would make this tool better for everyone
+- 🐛 **[Reporting Issues](https://github.com/sourabh-550/smart-resume-screener/issues)** — bugs, edge cases, and unexpected behaviour
+- 💡 **[Suggesting Features](https://github.com/sourabh-550/smart-resume-screener/issues/new?template=feature_request.md)** — ideas that would make this tool better for everyone
 
 ---
 
@@ -863,10 +846,8 @@ Have questions, collaboration ideas, or just want to say hello?
 
 | Platform | Link |
 |---|---|
-| 📧 Email | [your.email@example.com](mailto:your.email@example.com) |
-| 💼 LinkedIn | [linkedin.com/in/YOUR_LINKEDIN](https://linkedin.com/in/YOUR_LINKEDIN) |
-| 🐙 GitHub | [github.com/YOUR_USERNAME](https://github.com/YOUR_USERNAME) |
-| 🌐 Portfolio | [yourportfolio.dev](https://yourportfolio.dev) |
+| 🐙 GitHub | [github.com/sourabh-550](https://github.com/sourabh-550) |
+| 🤗 HuggingFace | [huggingface.co/sourabh5500](https://huggingface.co/sourabh5500) |
 
 </div>
 
@@ -874,10 +855,10 @@ Have questions, collaboration ideas, or just want to say hello?
 
 <div align="center">
 
-**Made with ❤️ and a lot of ☕ by [Your Name](https://github.com/YOUR_USERNAME)**
+**Made with ❤️ and a lot of ☕ by [sourabh-550](https://github.com/sourabh-550)**
 
 *If this project helped you, a ⭐ star goes a long way — thank you!*
 
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR_USERNAME/smart-resume-screener&type=Date)](https://star-history.com/#YOUR_USERNAME/smart-resume-screener&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=sourabh-550/smart-resume-screener&type=Date)](https://star-history.com/#sourabh-550/smart-resume-screener&Date)
 
 </div>
